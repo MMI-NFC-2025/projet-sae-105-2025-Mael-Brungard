@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ce site vous plonge dans l'effet Matilda et les femmes de science oubliées.">
+<title>Effet Matilda</title>
+<script type="module" src="/src/js/neon-effect.js"></script>
+<script type="module" src="/src/js/menu.js"></script>
+<link rel="stylesheet" href="/src/css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="menu menu--fixed menu--dark">
+  <div class="menu__container">
+    <header class="menu__header">
+      <a class="menu__brand" href="/index.html"><img src="/assets/img/icons/logo--white.svg" alt="logo light"></a>
+      <button class="menu__toggler" type="button" aria-controls="menuNav" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
+        <span class="menu__toggler-icon"></span>
+      </button>
+    </header>
+
+    <nav class="menu__collapse" id="menuNav" aria-hidden="true">
+      <ul class="menu__nav">
+
+        <li class="menu__item navbar__item--dropdown">
+          <button class="menu__link navbar__link--dropdown" aria-expanded="false" aria-controls="menu__dropdown" aria-label="Sélectionner la langue">
+            Langue
+          </button>
+          <ul class="menu__dropdown" aria-hidden="true">
+            <li><a class="menu__dropdown-item" href="/index.html">Français</a></li>
+            <li><a class="menu__dropdown-item" href="/index-en.html">English</a></li>
+          </ul>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/index.html">Accueil</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Principaux/chercheuse.html">Rosalind Franklin</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Principaux/femmesScienceLitterature.html">Femmes oubliées</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Principaux/theorie.html">Théorie</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Principaux/film.html">CinéMatilda</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Principaux/objet.html">Livre</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Secondaire/projets.html">Autres projets</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Secondaire/contact.html">Contact</a>
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<header class="hero hero--tall">
+  <canvas class="hero__canvas" id="neonCanvas" aria-hidden="true"></canvas>
+  <div class="hero__content">
+    <h1 class="hero__title" data-aos="fade-up" data-aos-duration="1500">
+      <i class="fa-solid fa-dna" aria-hidden="true"></i> L'ADN à double hélice
+    </h1>
+    <p class="hero__description" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+      Une découverte qui bouscule le milieu de la science.
+    </p>
+  </div>
+  <div class="hero__scroll-indicator" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500" aria-hidden="true">
+    <div class="hero__arrow"></div>
+    <div class="hero__arrow"></div>
+    <div class="hero__arrow"></div>
+  </div>
+</header>
+
+<main>
+  <article class="theory-context">
+    <div class="theory-context__container">
+      <h2 class="theory-context__heading">Contexte scientifique</h2>
+      <div class="theory-context__content">
+        <div class="theory-context__image-wrapper" data-aos="fade-up">
+          <img src="/assets/img/ADN.webp" 
+               class="theory-context__image" 
+               alt="Représentation de la structure de l'ADN à double hélice" 
+               loading="lazy">
+        </div>
+        <div class="theory-context__text" data-aos="fade-up">
+          <p class="theory-context__paragraph">
+            Au début du XX<sup>e</sup> siècle, la nature de l'hérédité restait mystérieuse. 
+            Les scientifiques savaient que les gènes existaient, mais leur support moléculaire 
+            était inconnu. Certains pensaient que les protéines, plus complexes, étaient le support 
+            de l'information génétique. L'ADN, trop simple en apparence, était sous-estimé. 
+            C'est dans ce contexte de rivalités et de découvertes que la structure de la double hélice a émergé.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <section class="discovery">
+    <div class="discovery__container">
+      <h2 class="discovery__heading" data-aos="fade-up">La découverte de la double hélice</h2>
+      <div class="discovery__content">
+        <div class="discovery__image-wrapper" data-aos="fade-up">
+          <img src="/assets/img/watson-crick-modele.webp" 
+               class="discovery__image" 
+               alt="Modèle de Watson et Crick de la structure de l'ADN" 
+               loading="lazy">
+        </div>
+        <div class="discovery__text" data-aos="fade-up">
+          <p class="discovery__paragraph">
+            En 1953, James Watson et Francis Crick, s'appuyant sur les travaux de 
+            <a href="/fr/Article_Principaux/chercheuse.html" class="discovery__link">Rosalind Franklin</a>, 
+            ont proposé le modèle de la double hélice de l'ADN. 
+            Cette structure montrait que l'information génétique est codée par la séquence 
+            des bases (A, T, G, C) et que deux brins complémentaires s'associent de manière précise.
+          </p>
+          <p class="discovery__paragraph">
+            La découverte fut une véritable révolution, car elle expliquait non seulement 
+            la transmission de l'information génétique, mais aussi son mécanisme de réplication.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="impact">
+    <div class="impact__container">
+      <h2 class="impact__heading" data-aos="fade-up">Impact et changements en science</h2>
+      <p class="impact__text" data-aos="fade-up">
+        La mise en évidence de la double hélice a bouleversé la biologie et ouvert la voie à une nouvelle ère scientifique : 
+        la biologie moléculaire. Les chercheurs pouvaient désormais comprendre comment les gènes fonctionnent, 
+        se répliquent et se transmettent. Cela a permis de passer d'une science descriptive de la vie 
+        à une science mécanistique et explicative.
+      </p>
+    </div>
+  </section>
+
+  <section class="applications">
+    <div class="applications__container">
+      <h2 class="applications__heading" data-aos="fade-up">Découvertes rendues possibles</h2>
+      <div class="applications__grid">
+
+        <article class="application-card" data-aos="fade-up">
+          <a href="https://fr.wikipedia.org/wiki/Projet_g%C3%A9nome_humain" 
+             class="application-card__link" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             aria-label="En savoir plus sur le séquençage du génome humain">
+            <div class="application-card__image-wrapper">
+              <img src="/assets/img/genome.webp" 
+                   class="application-card__image" 
+                   alt="Visualisation du séquençage du génome humain" 
+                   loading="lazy">
+              <div class="application-card__overlay">
+                <h3 class="application-card__title">Séquençage du génome humain</h3>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="application-card" data-aos="fade-up">
+          <a href="https://fr.wikipedia.org/wiki/Empreinte_g%C3%A9n%C3%A9tique" 
+             class="application-card__link" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             aria-label="En savoir plus sur les tests ADN">
+            <div class="application-card__image-wrapper">
+              <img src="/assets/img/test-adn.webp" 
+                   class="application-card__image" 
+                   alt="Illustration d'un test ADN en laboratoire" 
+                   loading="lazy">
+              <div class="application-card__overlay">
+                <h3 class="application-card__title">Tests ADN</h3>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="application-card" data-aos="fade-up">
+          <a href="https://fr.wikipedia.org/wiki/CRISPR-Cas9" 
+             class="application-card__link" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             aria-label="En savoir plus sur l'édition génétique CRISPR">
+            <div class="application-card__image-wrapper">
+              <img src="/assets/img/crispr.webp" 
+                   class="application-card__image" 
+                   alt="Représentation de la technologie CRISPR-Cas9" 
+                   loading="lazy">
+              <div class="application-card__overlay">
+                <h3 class="application-card__title">Édition génétique (CRISPR)</h3>
+              </div>
+            </div>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__container">
+
+    <nav class="footer__nav" aria-label="Navigation du pied de page">
+
+      <div class="footer__section">
+        <h2 class="footer__heading">Navigation</h2>
+        <div class="footer__columns">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="/fr/index.html" class="footer__link">Accueil</a></li>
+            <li class="footer__item"><a href="/fr/Article_Principaux/chercheuse.html" class="footer__link">Rosalind Franklin</a></li>
+            <li class="footer__item"><a href="/fr/Article_Principaux/femmesScienceLitterature.html" class="footer__link">Femmes oubliées</a></li>
+            <li class="footer__item"><a href="/fr/Article_Principaux/film.html" class="footer__link">CinéMatilda</a></li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="/fr/Article_Principaux/objet.html" class="footer__link">Livre</a></li>
+            <li class="footer__item"><a href="/fr/Article_Secondaire/contact.html" class="footer__link">Contact</a></li>
+            <li class="footer__item"><a href="/fr/Article_Secondaire/projets.html" class="footer__link">Autres Projets</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__branding">
+        <h2 class="footer__brand-title">MatildaPresse</h2>
+        <img src="/assets/img/adn.png" alt="Logo MatildaPresse" class="footer__logo" loading="lazy">
+        <p class="footer__tagline">
+          Plus qu'une presse, une plongée dans l'histoire
+        </p>
+      </div>
+    
+      <div class="footer__legal">
+        <a href="/fr/Article_Secondaire/mentions.html" class="footer__legal-link">Mentions légales</a>
+        <span class="footer__separator" aria-hidden="true">|</span>
+        <a href="/fr/Article_Secondaire/rgpd.html" class="footer__legal-link">Politique RGPD</a>
+      </div>
+
+    </nav>
+
+    <div class="footer__copyright">
+      <p class="footer__copyright-text">&copy; 2025 Effet Matilda | <a href="https://www.umlp.fr/" class="footer__copyright-link">Université Marie & Louis Pasteur</a></p>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

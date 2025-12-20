@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ce site vous plonge dans l'effet Matilda et les femmes de science oubliées.">
+<title>Effet Matilda</title>
+<script type="module" src="/src/js/neon-effect.js"></script>
+<script type="module" src="/src/js/menu.js"></script>
+<link rel="stylesheet" href="/src/css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar--fixed navbar--dark">
+  <div class="navbar__container">
+    <header class="navbar__header">
+      <a class="navbar__brand" href="/fr/">Effet Matilda</a>
+      <button class="navbar__toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
+        <span class="navbar__toggler-icon"></span>
+      </button>
+    </header>
+
+    <div class="navbar__collapse" id="navbarNav">
+      <ul class="navbar__menu">
+
+        <li class="navbar__item navbar__item--dropdown">
+          <a class="navbar__link navbar__link--dropdown" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Sélectionner la langue">
+            Langue
+          </a>
+          <ul class="navbar__dropdown" aria-labelledby="langDropdown">
+            <li><a class="navbar__dropdown-item" href="/fr/index.html">Français</a></li>
+            <li><a class="navbar__dropdown-item" href="/fr/index-en.html">English</a></li>
+          </ul>
+        </li>
+
+        <li class="navbar__item">
+          <a class="navbar__link" href="/fr/index.html">Accueil</a>
+        </li>
+
+        <li class="navbar__item">
+          <a class="navbar__link" href="/fr/Article_Principaux/chercheuse.html">Rosalind Franklin</a>
+        </li>
+
+        <li class="navbar__item">
+          <a class="navbar__link" href="/fr/Article_Principaux/femmesScienceLitterature.html">Femmes oubliées</a>
+        </li>
+
+        <li class="navbar__item">
+          <a class="navbar__link" href="/fr/Article_Principaux/theorie.html">Théorie</a>
+        </li>
+
+        <li class="navbar__item">
+          <a class="navbar__link" href="/fr/Article_Principaux/film.html">CinéMatilda</a>
+        </li>
+
+        <li class="navbar__item">
+          <a class="navbar__link" href="/fr/Article_Principaux/objet.html">Livre</a>
+        </li>
+
+        <li class="navbar__item">
+          <a class="navbar__link" href="/fr/Article_Secondaire/projets.html">Autres projets</a>
+        </li>
+
+        <li class="navbar__item">
+          <a class="navbar__link" href="/fr/Article_Secondaire/contact.html">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="text-center text-white py-5 d-flex flex-column justify-content-center align-items-center" 
+        style="background-color:#1a1a1a; min-height: 80vh; position:relative;">
+  <canvas id="neonCanvas" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;"></canvas>
+  <div style="position:relative; z-index:1;">
+    <h1 data-aos="fade-up" data-aos-duration="1500">Autres Projets</h1>
+    <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+      Liste des Projets Matilda de MMI1 2025
+    </p>
+  </div>
+    <div style="position: relative;width: 24px;height: 24px;" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+        <div class="fleche"></div>
+        <div class="fleche"></div>
+        <div class="fleche"></div>
+    </div>
+</header>
+
+<section class="container my-5" data-aos="fade-up">
+  <h2 class="text-center mb-4">Projets de la classe MMI1 - 2025</h2>
+  
+  <div class="table-responsive shadow rounded">
+    <table class="table table-dark table-striped align-middle mb-0">
+      <thead class="table-primary text-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Auteur(s)</th>
+          <th scope="col">Description</th>
+          <th scope="col">Lien</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Nom Prénom</td>
+          <td>Site sur les femmes de science oubliées avec galerie de films.</td>
+          <td><a href="#" class="btn btn-sm btn-light">Voir</a></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Nom Prénom</td>
+          <td>Application de suivi de projets étudiants en MMI1.</td>
+          <td><a href="#" class="btn btn-sm btn-light">Voir</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+<footer class="text-white mt-5" style="background-color:#1a1a1a;">
+  <div class="container py-5">
+
+    <div class="d-flex justify-content-center gap-5 align-items-start flex-wrap">
+
+      <div class="mb-4">
+        <h5 class="mb-3 text-center">Navigation</h5>
+        <div class="row">
+          <div class="col-12">
+            <ul class="list-unstyled">
+              <li><a href="../index.html" class="text-white text-decoration-none">Accueil</a></li>
+              <li><a href="../Article_Principaux/chercheuse.html" class="text-white text-decoration-none">Rosalind Franklin</a></li>
+              <li><a href="../Article_Principaux/femmesScienceLitterature.html" class="text-white text-decoration-none">Femmes oubliées</a></li>
+              <li><a href="../Article_Principaux/film.html" class="text-white text-decoration-none">CinéMatilda</a></li>
+            </ul>
+          </div>
+          <div class="col-12">
+            <ul class="list-unstyled">
+              <li><a href="../Article_Principaux/objet.html" class="text-white text-decoration-none">Livre</a></li>
+              <li><a href="../Article_Secondaire/contact.html" class="text-white text-decoration-none">Contact</a></li>
+              <li><a href="../Article_Secondaire/projets.html" class="text-white text-decoration-none">Autres Projets</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-4 d-flex flex-column justify-content-center align-items-center text-center">
+        <h5 class="mb-2 fw-bold" style="letter-spacing: 1px; color: #ff00ff;">
+          MatildaPresse
+        </h5>
+        <img src="../Media/adn.png" alt="Logo" class="img-fluid" style="max-width: 80px;">
+        <p class="small mt-2 text-white-50">
+          Plus qu’une presse, une plongée dans l’histoire
+        </p>
+      </div>
+    
+
+      <div class="mb-4">
+        <p class="small mb-0">
+          <a href="../Article_Secondaire/mentions.html" class="text-white text-decoration-none">Mentions légales</a> | 
+          <a href="../Article_Secondaire/rgpd.html" class="text-white text-decoration-none">Politique RGPD</a>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="text-center pt-4 border-top border-secondary mt-3">
+      <p class="mb-0" >&copy; 2025 Effet Matilda | <a href="https://www.umlp.fr/">Université Marie & Louis Pasteur</a></p>
+    </div>
+
+  </div>
+</footer>
+
+
+<script src="../JS/neon-effect.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script
+  src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.1/dist/dotlottie-wc.js"
+  type="module"
+></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ce site vous plonge dans l'effet Matilda et les femmes de science oubliées.">
+<title>Effet Matilda</title>
+<script type="module" src="/src/js/neon-effect.js"></script>
+<script type="module" src="/src/js/menu.js"></script>
+<link rel="stylesheet" href="/src/css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="menu menu--fixed menu--dark">
+  <div class="menu__container">
+    <header class="menu__header">
+      <a class="menu__brand" href="/index.html"><img src="/assets/img/icons/logo--white.svg" alt="logo light"></a>
+      <button class="menu__toggler" type="button" aria-controls="menuNav" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
+        <span class="menu__toggler-icon"></span>
+      </button>
+    </header>
+
+    <nav class="menu__collapse" id="menuNav" aria-hidden="true">
+      <ul class="menu__nav">
+
+        <li class="menu__item navbar__item--dropdown">
+          <button class="menu__link navbar__link--dropdown" aria-expanded="false" aria-controls="menu__dropdown" aria-label="Sélectionner la langue">
+            Langue
+          </button>
+          <ul class="menu__dropdown" aria-hidden="true">
+            <li><a class="menu__dropdown-item" href="/index.html">Français</a></li>
+            <li><a class="menu__dropdown-item" href="/index-en.html">English</a></li>
+          </ul>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/index.html">Accueil</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Principaux/chercheuse.html">Rosalind Franklin</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Principaux/femmesScienceLitterature.html">Femmes oubliées</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Principaux/theorie.html">Théorie</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Principaux/film.html">CinéMatilda</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Principaux/objet.html">Livre</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Secondaire/projets.html">Autres projets</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Secondaire/contact.html">Contact</a>
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<main>
+  <section class="hero">
+    <canvas class="hero__canvas" id="neonCanvas" aria-hidden="true"></canvas>
+    <div class="hero__content">
+      <h1 class="hero__title title--home" id="heroTitle">Contactez nous</h1>
+    </div>
+    <div class="hero__scroll-indicator">
+      <div class="hero__arrow"></div>
+      <div class="hero__arrow"></div>
+      <div class="hero__arrow"></div>
+    </div>
+  </section>
+  <div class="contact-form" data-aos="fade-up" data-aos-duration="1500">
+    <form class="contact-form__wrapper" action="#" method="post">
+      <h1 class="contact-form__title">Contactez-nous</h1>
+      
+      <div class="contact-form__field">
+        <label for="name" class="contact-form__label">Nom</label>
+        <input type="text" 
+                class="contact-form__input" 
+                id="name" 
+                name="name"
+                placeholder="Votre nom" 
+                required 
+                aria-required="true">
+      </div>
+
+      <div class="contact-form__field">
+        <label for="email" class="contact-form__label">Email</label>
+        <input type="email" 
+                class="contact-form__input" 
+                id="email" 
+                name="email"
+                placeholder="Votre email" 
+                required 
+                aria-required="true">
+      </div>
+
+      <div class="contact-form__field">
+        <label for="subject" class="contact-form__label">Objet</label>
+        <input type="text" 
+                class="contact-form__input" 
+                id="subject" 
+                name="subject"
+                placeholder="Objet du message" 
+                required 
+                aria-required="true">
+      </div>
+
+      <div class="contact-form__field">
+        <label for="message" class="contact-form__label">Message</label>
+        <textarea class="contact-form__textarea" 
+                  id="message" 
+                  name="message"
+                  rows="5" 
+                  placeholder="Votre message..." 
+                  required 
+                  aria-required="true"></textarea>
+      </div>
+
+      <div class="contact-form__actions">
+        <button type="submit" class="contact-form__submit">Envoyer</button>
+      </div>
+    </form>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer__container">
+
+    <nav class="footer__nav" aria-label="Navigation du pied de page">
+
+      <div class="footer__section">
+        <h2 class="footer__heading">Navigation</h2>
+        <div class="footer__columns">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="/fr/index.html" class="footer__link">Accueil</a></li>
+            <li class="footer__item"><a href="/fr/Article_Principaux/chercheuse.html" class="footer__link">Rosalind Franklin</a></li>
+            <li class="footer__item"><a href="/fr/Article_Principaux/femmesScienceLitterature.html" class="footer__link">Femmes oubliées</a></li>
+            <li class="footer__item"><a href="/fr/Article_Principaux/film.html" class="footer__link">CinéMatilda</a></li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="/fr/Article_Principaux/objet.html" class="footer__link">Livre</a></li>
+            <li class="footer__item"><a href="/fr/Article_Secondaire/contact.html" class="footer__link">Contact</a></li>
+            <li class="footer__item"><a href="/fr/Article_Secondaire/projets.html" class="footer__link">Autres Projets</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__branding">
+        <h2 class="footer__brand-title">MatildaPresse</h2>
+        <img src="/assets/img/adn.png" alt="Logo MatildaPresse" class="footer__logo" loading="lazy">
+        <p class="footer__tagline">
+          Plus qu'une presse, une plongée dans l'histoire
+        </p>
+      </div>
+    
+      <div class="footer__legal">
+        <a href="/fr/Article_Secondaire/mentions.html" class="footer__legal-link">Mentions légales</a>
+        <span class="footer__separator" aria-hidden="true">|</span>
+        <a href="/fr/Article_Secondaire/rgpd.html" class="footer__legal-link">Politique RGPD</a>
+      </div>
+
+    </nav>
+
+    <div class="footer__copyright">
+      <p class="footer__copyright-text">&copy; 2025 Effet Matilda | <a href="https://www.umlp.fr/" class="footer__copyright-link">Université Marie & Louis Pasteur</a></p>
+    </div>
+
+  </div>
+</footer>
+</body>
+</html>

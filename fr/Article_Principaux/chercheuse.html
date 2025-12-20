@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ce site vous plonge dans l'effet Matilda et les femmes de science oubliées.">
+<title>Effet Matilda</title>
+<script type="module" src="/src/js/neon-effect.js"></script>
+<script type="module" src="/src/js/menu.js"></script>
+<link rel="stylesheet" href="/src/css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="menu menu--fixed menu--dark">
+  <div class="menu__container">
+    <header class="menu__header">
+      <a class="menu__brand" href="/index.html"><img src="/assets/img/icons/logo--white.svg" alt="logo light"></a>
+      <button class="menu__toggler" type="button" aria-controls="menuNav" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
+        <span class="menu__toggler-icon"></span>
+      </button>
+    </header>
+
+    <nav class="menu__collapse" id="menuNav" aria-hidden="true">
+      <ul class="menu__nav">
+
+        <li class="menu__item navbar__item--dropdown">
+          <button class="menu__link navbar__link--dropdown" aria-expanded="false" aria-controls="menu__dropdown" aria-label="Sélectionner la langue">
+            Langue
+          </button>
+          <ul class="menu__dropdown" aria-hidden="true">
+            <li><a class="menu__dropdown-item" href="/index.html">Français</a></li>
+            <li><a class="menu__dropdown-item" href="/index-en.html">English</a></li>
+          </ul>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/index.html">Accueil</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Principaux/chercheuse.html">Rosalind Franklin</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Principaux/femmesScienceLitterature.html">Femmes oubliées</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Principaux/theorie.html">Théorie</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Principaux/film.html">CinéMatilda</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Principaux/objet.html">Livre</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Secondaire/projets.html">Autres projets</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Secondaire/contact.html">Contact</a>
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<main>
+  <section class="hero">
+    <canvas class="hero__canvas" id="neonCanvas" aria-hidden="true"></canvas>
+    <div class="hero__content">
+      <h1 class="hero__title title--home" id="heroTitle" data-aos="fade-up" data-aos-duration="1500">Rosalind Franklin</h1>
+      <p class="hero__description" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+        Une figure oubliée de la science et exemple typique de l'Effet Matilda.
+      </p>
+    </div>
+    <div class="hero__scroll-indicator" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500" aria-hidden="true">
+      <div class="hero__arrow"></div>
+      <div class="hero__arrow"></div>
+      <div class="hero__arrow"></div>
+    </div>
+  </section>
+  <article class="section--biography section">
+    <div class="biography__container">
+      <div class="biography__content">
+        <div class="biography__image-wrapper">
+          <img src="/assets/img/Rosalind.webp" 
+               class="biography__image" 
+               alt="Portrait de Rosalind Franklin" 
+               loading="lazy">
+        </div>
+        <div class="biography__text">
+          <h2 class="biography__heading">Biographie</h2>
+          <p class="biography__paragraph">
+            Rosalind Elsie Franklin (1920 – 1958) était une biophysicienne et cristallographe.
+            Spécialiste de la diffraction des rayons X, elle a produit des clichés déterminants pour comprendre la structure de l’ADN. Malgré l’importance cruciale de ses travaux, elle est restée longtemps dans l’ombre de ses collègues masculins.
+          </p>
+          <ul class="biography__timeline">
+            <li class="biography__timeline-item">
+              <strong class="biography__timeline-year">1920 :</strong> 
+              <span class="biography__timeline-event">Naissance à Londres</span>
+            </li>
+            <li class="biography__timeline-item">
+              <strong class="biography__timeline-year">1945 :</strong> 
+              <span class="biography__timeline-event">Doctorat en physique et chimie</span>
+            </li>
+            <li class="biography__timeline-item">
+              <strong class="biography__timeline-year">1951 :</strong> 
+              <span class="biography__timeline-event">Photographie 51</span>
+            </li>
+            <li class="biography__timeline-item">
+              <strong class="biography__timeline-year">1958 :</strong> 
+              <span class="biography__timeline-event">Décès prématuré à 37 ans</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <section class="section--contributions section">
+    <div class="contributions__container">
+      <h2 class="contributions__heading">Contributions scientifiques</h2>
+      <div class="contributions__content">
+        <article class="contributions__text">
+          <h3 class="contributions__subtitle">L'ADN et la double hélice</h3>
+          <p class="contributions__paragraph">
+            En analysant la diffraction des rayons X sur les fibres d'ADN, Franklin a obtenu la célèbre 
+            <em>Photographie 51</em>. Cette image a permis de confirmer la structure en 
+            <a href="/fr/Article_Principaux/theorie.html" class="contributions__link">double hélice de l'ADN</a>, 
+            découverte attribuée publiquement à Watson et Crick.
+          </p>
+        </article>
+        <div class="contributions__image-wrapper">
+          <img src="/assets/img/photo-51.webp" 
+               class="contributions__image" 
+               alt="Photographie 51 - Cliché de diffraction des rayons X de l'ADN" 
+               loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section--legacy section">
+    <div class="legacy__container">
+      <h2 class="legacy__heading" >Héritage et reconnaissance</h2>
+      <p class="legacy__text">
+        Rosalind Franklin n'a pas reçu le prix Nobel, décerné en 1962 à Watson, Crick et Wilkins. 
+        Aujourd'hui, elle est reconnue comme une scientifique majeure dont les travaux ont ouvert la voie à la 
+        biologie moléculaire moderne ainsi qu'un exemple de 
+        <a href="/fr/Article_Principaux/femmesScienceLitterature.html" class="legacy__link">l'effet Matilda</a>.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__container">
+
+    <nav class="footer__nav" aria-label="Navigation du pied de page">
+
+      <div class="footer__section">
+        <h2 class="footer__heading">Navigation</h2>
+        <div class="footer__columns">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="/index.html" class="footer__link">Accueil</a></li>
+            <li class="footer__item"><a href="/fr/Article_Principaux/chercheuse.html" class="footer__link">Rosalind Franklin</a></li>
+            <li class="footer__item"><a href="/fr/Article_Principaux/femmesScienceLitterature.html" class="footer__link">Femmes oubliées</a></li>
+            <li class="footer__item"><a href="/fr/Article_Principaux/film.html" class="footer__link">CinéMatilda</a></li>
+            <li class="footer__item"><a href="/fr/Article_Principaux/objet.html" class="footer__link">Livre</a></li>
+            <li class="footer__item"><a href="/fr/Article_Secondaire/contact.html" class="footer__link">Contact</a></li>
+            <li class="footer__item"><a href="/fr/Article_Secondaire/projets.html" class="footer__link">Autres Projets</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__branding">
+        <img src="/assets/img/icons/logo--white.svg" alt="Logo MatildaPresse" class="footer__logo" loading="lazy">
+        <p class="footer__tagline">
+          Plus qu'une presse, une plongée dans l'histoire
+        </p>
+      </div>
+    
+      <div class="footer__legal">
+        <span><strong>Mentions légales</strong></span>
+        <p>Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
+      </div>
+
+    </nav>
+    <div class="separator-line"></div>
+    <div class="footer__copyright">
+      <ul>
+        <li>2025 Effet Matilda</li>
+        <li>@mael.brungard@univ-fcomte.fr</li>
+        <li><a href="https://www.umlp.fr/" class="footer__copyright-link">Université Marie & Louis Pasteur</a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
