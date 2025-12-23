@@ -33,3 +33,7 @@
     color: transparent;
     animation: scan 4s linear infinite;
 }
+
+.hero__content{
+    z-index: 100;
+}

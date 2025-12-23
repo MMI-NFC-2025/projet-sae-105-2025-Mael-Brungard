@@ -14,82 +14,77 @@
 </head>
 <body>
 
-<nav class="navbar navbar--fixed navbar--dark">
-  <div class="navbar__container">
-    <header class="navbar__header">
-      <a class="navbar__brand" href="/fr/">Effet Matilda</a>
-      <button class="navbar__toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
-        <span class="navbar__toggler-icon"></span>
+<div class="menu menu--fixed menu--dark">
+  <div class="menu__container">
+    <header class="menu__header">
+      <a class="menu__brand" href="/index.html"><img src="/assets/img/icons/logo--white.svg" alt="logo light"></a>
+      <button class="menu__toggler" type="button" aria-controls="menuNav" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
+        <span class="menu__toggler-icon"></span>
       </button>
     </header>
 
-    <div class="navbar__collapse" id="navbarNav">
-      <ul class="navbar__menu">
+    <nav class="menu__collapse" id="menuNav" aria-hidden="true">
+      <ul class="menu__nav">
 
-        <li class="navbar__item navbar__item--dropdown">
-          <a class="navbar__link navbar__link--dropdown" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Sélectionner la langue">
+        <li class="menu__item navbar__item--dropdown">
+          <button class="menu__link navbar__link--dropdown" aria-expanded="false" aria-controls="menu__dropdown" aria-label="Sélectionner la langue">
             Langue
-          </a>
-          <ul class="navbar__dropdown" aria-labelledby="langDropdown">
-            <li><a class="navbar__dropdown-item" href="/fr/index.html">Français</a></li>
-            <li><a class="navbar__dropdown-item" href="/fr/index-en.html">English</a></li>
+          </button>
+          <ul class="menu__dropdown" aria-hidden="true">
+            <li><a class="menu__dropdown-item" href="/index.html">Français</a></li>
+            <li><a class="menu__dropdown-item" href="/index-en.html">English</a></li>
           </ul>
         </li>
 
-        <li class="navbar__item">
-          <a class="navbar__link" href="/fr/index.html">Accueil</a>
+        <li class="menu__item">
+          <a class="menu__link" href="/index.html">Accueil</a>
         </li>
 
-        <li class="navbar__item">
-          <a class="navbar__link" href="/fr/Article_Principaux/chercheuse.html">Rosalind Franklin</a>
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Principaux/chercheuse.html">Rosalind Franklin</a>
         </li>
 
-        <li class="navbar__item">
-          <a class="navbar__link" href="/fr/Article_Principaux/femmesScienceLitterature.html">Femmes oubliées</a>
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Principaux/femmesScienceLitterature.html">Femmes oubliées</a>
         </li>
 
-        <li class="navbar__item">
-          <a class="navbar__link" href="/fr/Article_Principaux/theorie.html">Théorie</a>
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Principaux/theorie.html">Théorie</a>
         </li>
 
-        <li class="navbar__item">
-          <a class="navbar__link" href="/fr/Article_Principaux/film.html">CinéMatilda</a>
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Principaux/film.html">CinéMatilda</a>
         </li>
 
-        <li class="navbar__item">
-          <a class="navbar__link" href="/fr/Article_Principaux/objet.html">Livre</a>
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Principaux/objet.html">Livre</a>
         </li>
 
-        <li class="navbar__item">
-          <a class="navbar__link" href="/fr/Article_Secondaire/projets.html">Autres projets</a>
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Secondaire/projets.html">Autres projets</a>
         </li>
 
-        <li class="navbar__item">
-          <a class="navbar__link" href="/fr/Article_Secondaire/contact.html">Contact</a>
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Secondaire/contact.html">Contact</a>
         </li>
 
       </ul>
-    </div>
+    </nav>
   </div>
-</nav>
-
-<header class="text-center text-white py-5 d-flex flex-column justify-content-center align-items-center" 
-        style="background-color:#1a1a1a; min-height: 80vh; position:relative;">
-  <canvas id="neonCanvas" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;"></canvas>
-  <div style="position:relative; z-index:1;">
-    <h1 data-aos="fade-up" data-aos-duration="1500">Autres Projets</h1>
-    <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
-      Liste des Projets Matilda de MMI1 2025
-    </p>
-  </div>
-    <div style="position: relative;width: 24px;height: 24px;" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
-        <div class="fleche"></div>
-        <div class="fleche"></div>
-        <div class="fleche"></div>
-    </div>
-</header>
+</div>
 
 <section class="container my-5" data-aos="fade-up">
+  <section class="hero">
+    <canvas class="hero__canvas" id="neonCanvas" aria-hidden="true"></canvas>
+    <div class="hero__content">
+      <h1 class="hero__title title--home" id="heroTitle">Contactez nous</h1>
+    </div>
+    <div class="hero__scroll-indicator">
+      <div class="hero__arrow"></div>
+      <div class="hero__arrow"></div>
+      <div class="hero__arrow"></div>
+    </div>
+  </section>
   <h2 class="text-center mb-4">Projets de la classe MMI1 - 2025</h2>
   
   <div class="table-responsive shadow rounded">

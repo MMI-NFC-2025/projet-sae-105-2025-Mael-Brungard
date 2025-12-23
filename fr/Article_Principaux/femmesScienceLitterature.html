@@ -7,6 +7,7 @@
 <title>Effet Matilda</title>
 <script type="module" src="/src/js/neon-effect.js"></script>
 <script type="module" src="/src/js/menu.js"></script>
+<script type="module" src="/src/js/card-bg.js"></script>
 <link rel="stylesheet" href="/src/css/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -73,27 +74,24 @@
   </div>
 </div>
 
-<header class="hero hero--tall">
-  <canvas class="hero__canvas" id="neonCanvas" aria-hidden="true"></canvas>
-  <div class="hero__content">
-    <h1 class="hero__title" data-aos="fade-up" data-aos-duration="1500">
-      <i class="fa-solid fa-flask" aria-hidden="true"></i> Les Femmes de science oubliées
-    </h1>
-    <p class="hero__description" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
-      Une bibliothèque d'œuvres liées aux femmes de science qui a pour but de les mettre en avant.
-    </p>
-  </div>
-  <div class="hero__scroll-indicator" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500" aria-hidden="true">
-    <div class="hero__arrow"></div>
-    <div class="hero__arrow"></div>
-    <div class="hero__arrow"></div>
-  </div>
-</header>
-
 <main>
-  <section class="timeline-section" id="matilda-timeline" data-aos="fade-up">
+  <section class="hero section">
+    <canvas class="hero__canvas" id="neonCanvas"></canvas>
+    <div class="hero__content">
+      <h1 class="hero__title title--home" id="heroTitle">Les Femmes de science oubliées</h1>
+      <p class="hero__description">
+        Une bibliothèque d'œuvres liées aux femmes de science qui a pour but de les mettre en avant.
+      </p>
+    </div>
+    <div class="hero__scroll-indicator">
+      <div class="hero__arrow"></div>
+      <div class="hero__arrow"></div>
+      <div class="hero__arrow"></div>
+    </div>
+  </section>
+  <section class="timeline-section section" id="matilda-timeline" data-aos="fade-up">
     <div class="timeline-section__container">
-      <h2 class="timeline-section__heading">Les Matildas</h2>
+      <h2 class="timeline-section__heading text-center">Les Matildas</h2>
       <p class="timeline-section__description">
         Explorez les femmes scientifiques oubliées qui ont marqué l'histoire à travers le temps.
       </p>
@@ -204,10 +202,10 @@
     </div>
   </section>
 
-  <section class="library" data-aos="fade-up">
-    <div class="library__container">
-      <h2 class="library__heading">Bibliothèque des Femmes de Science</h2>
-      <div class="library__grid">
+  <section class="section--library section" data-aos="fade-up">
+    <div class="section--library__container">
+      <h2 class="section--library__heading text-center">Bibliothèque des Femmes de Science</h2>
+      <div class="gallery__grid">
 
         <article class="book-card">
           <a href="https://www.amazon.fr/Hidden-Figures-American-Untold-Mathematicians/dp/006236359X" 
@@ -327,7 +325,6 @@
     </div>
   </section>
 </main>
-
 <footer class="footer">
   <div class="footer__container">
 
@@ -337,12 +334,10 @@
         <h2 class="footer__heading">Navigation</h2>
         <div class="footer__columns">
           <ul class="footer__list">
-            <li class="footer__item"><a href="/fr/index.html" class="footer__link">Accueil</a></li>
+            <li class="footer__item"><a href="/index.html" class="footer__link">Accueil</a></li>
             <li class="footer__item"><a href="/fr/Article_Principaux/chercheuse.html" class="footer__link">Rosalind Franklin</a></li>
             <li class="footer__item"><a href="/fr/Article_Principaux/femmesScienceLitterature.html" class="footer__link">Femmes oubliées</a></li>
             <li class="footer__item"><a href="/fr/Article_Principaux/film.html" class="footer__link">CinéMatilda</a></li>
-          </ul>
-          <ul class="footer__list">
             <li class="footer__item"><a href="/fr/Article_Principaux/objet.html" class="footer__link">Livre</a></li>
             <li class="footer__item"><a href="/fr/Article_Secondaire/contact.html" class="footer__link">Contact</a></li>
             <li class="footer__item"><a href="/fr/Article_Secondaire/projets.html" class="footer__link">Autres Projets</a></li>
@@ -351,30 +346,28 @@
       </div>
 
       <div class="footer__branding">
-        <h2 class="footer__brand-title">MatildaPresse</h2>
-        <img src="/assets/img/adn.png" alt="Logo MatildaPresse" class="footer__logo" loading="lazy">
+        <img src="/assets/img/icons/logo--white.svg" alt="Logo MatildaPresse" class="footer__logo" loading="lazy">
         <p class="footer__tagline">
           Plus qu'une presse, une plongée dans l'histoire
         </p>
       </div>
     
       <div class="footer__legal">
-        <a href="/fr/Article_Secondaire/mentions.html" class="footer__legal-link">Mentions légales</a>
-        <span class="footer__separator" aria-hidden="true">|</span>
-        <a href="/fr/Article_Secondaire/rgpd.html" class="footer__legal-link">Politique RGPD</a>
+        <span><strong>Mentions légales</strong></span>
+        <p>Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
       </div>
 
     </nav>
-
+    <div class="separator-line"></div>
     <div class="footer__copyright">
-      <p class="footer__copyright-text">&copy; 2025 Effet Matilda | <a href="https://www.umlp.fr/" class="footer__copyright-link">Université Marie & Louis Pasteur</a></p>
+      <ul>
+        <li>2025 Effet Matilda</li>
+        <li>@mael.brungard@univ-fcomte.fr</li>
+        <li><a href="https://www.umlp.fr/" class="footer__copyright-link">Université Marie & Louis Pasteur</a></li>
+      </ul>
     </div>
 
   </div>
 </footer>
-
-<script>
-  AOS.init();
-</script>
 </body>
 </html>

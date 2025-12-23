@@ -39,17 +39,17 @@ ul {
     list-style: none;
 }
 
-h1,
+
 h2,
 h3 {
     font-family: "Righteous", sans-serif;
     font-weight: 400;
     font-style: normal;
-    text-align: center;
+    text-align: start;
 }
 
-h3 {
-    text-align: start;
+h1,.text-center{
+    text-align: center;
 }
 
 button {
@@ -71,4 +71,8 @@ a {
 
 .intro__subtitle {
     text-align: start;
+}
+
+.section--film__text{
+    padding: var(--padding);
 }
