@@ -9,10 +9,10 @@ closeBtn.addEventListener('click', () => {
     document.body.classList.remove('no-scroll');
 });
 
-document.querySelectorAll('.gallery-card__button').forEach(card => {
+document.querySelectorAll('.gallery-card__button , .section--film__button').forEach(card => {
     card.addEventListener('click', () => {
         const trailerUrl = card.getAttribute('data-trailer');
-        const titleElement = card.querySelector('.gallery-card__title');
+        const titleElement = card.querySelector('.gallery-card__title , .section--film__title');
         const title = titleElement ? titleElement.textContent : 'Bande-annonce';
         trailerVid.src = `https://matildapresse.boomoon.cloud/assets/video/${trailerUrl}`;
         trailerTitle.textContent = title + " - Bande-annonce";

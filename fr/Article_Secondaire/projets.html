@@ -73,11 +73,14 @@
   </div>
 </div>
 
-<section class="container my-5" data-aos="fade-up">
-  <section class="hero">
-    <canvas class="hero__canvas" id="neonCanvas" aria-hidden="true"></canvas>
+<main>
+  <section class="hero section">
+    <canvas class="hero__canvas" id="neonCanvas"></canvas>
     <div class="hero__content">
-      <h1 class="hero__title title--home" id="heroTitle">Contactez nous</h1>
+      <h1 class="hero__title title--home" id="heroTitle">Autres Projets</h1>
+      <p class="hero__description">
+        Liste des Projets Matilda de MMI1 2025.
+      </p>
     </div>
     <div class="hero__scroll-indicator">
       <div class="hero__arrow"></div>
@@ -85,97 +88,138 @@
       <div class="hero__arrow"></div>
     </div>
   </section>
-  <h2 class="text-center mb-4">Projets de la classe MMI1 - 2025</h2>
-  
-  <div class="table-responsive shadow rounded">
-    <table class="table table-dark table-striped align-middle mb-0">
-      <thead class="table-primary text-dark">
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Auteur(s)</th>
-          <th scope="col">Description</th>
-          <th scope="col">Lien</th>
+  <section class="section--projects section">
+    <h2 class="projects-section__heading text-center">Projets de la classe MMI1 - 2025</h2>
+    <table class="projects-table">
+      <thead class="projects-table__head">
+        <tr class="projects-table__row">
+          <th scope="col" class="projects-table__header">#</th>
+          <th scope="col" class="projects-table__header">Auteur(s)</th>
+          <th scope="col" class="projects-table__header">Nom de projet</th>
+          <th scope="col" class="projects-table__header">Lien</th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Nom Prénom</td>
-          <td>Site sur les femmes de science oubliées avec galerie de films.</td>
-          <td><a href="#" class="btn btn-sm btn-light">Voir</a></td>
+      <tbody class="projects-table__body">
+        <tr class="projects-table__row">
+          <th scope="row" class="projects-table__cell projects-table__cell--header">1</th>
+          <td class="projects-table__cell">Deniz OZER</td>
+          <td class="projects-table__cell">Jocelyn Bell</td>
+          <td class="projects-table__cell">
+            <a href="#" class="projects-table__link">Voir</a>
+          </td>
         </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Nom Prénom</td>
-          <td>Application de suivi de projets étudiants en MMI1.</td>
-          <td><a href="#" class="btn btn-sm btn-light">Voir</a></td>
+
+        <tr class="projects-table__row">
+          <th scope="row" class="projects-table__cell projects-table__cell--header">2</th>
+          <td class="projects-table__cell">Lala BROUART</td>
+          <td class="projects-table__cell">Margaret Hamilton</td>
+          <td class="projects-table__cell">
+            <a href="#" class="projects-table__link">Voir</a>
+          </td>
+        </tr>
+
+        <tr class="projects-table__row">
+          <th scope="row" class="projects-table__cell projects-table__cell--header">3</th>
+          <td class="projects-table__cell">Théo ARALDI</td>
+          <td class="projects-table__cell">ADN Franklin</td>
+          <td class="projects-table__cell">
+            <a href="#" class="projects-table__link">Voir</a>
+          </td>
+        </tr>
+
+        <tr class="projects-table__row">
+          <th scope="row" class="projects-table__cell projects-table__cell--header">4</th>
+          <td class="projects-table__cell">Mathéo GIRARDIN TARBY</td>
+          <td class="projects-table__cell">Lise Meitner</td>
+          <td class="projects-table__cell">
+            <a href="#" class="projects-table__link">Voir</a>
+          </td>
+        </tr>
+
+        <tr class="projects-table__row">
+          <th scope="row" class="projects-table__cell projects-table__cell--header">5</th>
+          <td class="projects-table__cell">Matthis CARNICER</td>
+          <td class="projects-table__cell">Lumières sur elles</td>
+          <td class="projects-table__cell">
+            <a href="#" class="projects-table__link">Voir</a>
+          </td>
+        </tr>
+
+        <tr class="projects-table__row">
+          <th scope="row" class="projects-table__cell projects-table__cell--header">6</th>
+          <td class="projects-table__cell">Konstance KRUGER</td>
+          <td class="projects-table__cell">Hidden Reactions</td>
+          <td class="projects-table__cell">
+            <a href="#" class="projects-table__link">Voir</a>
+          </td>
+        </tr>
+
+        <tr class="projects-table__row">
+          <th scope="row" class="projects-table__cell projects-table__cell--header">7</th>
+          <td class="projects-table__cell">Sacha MARTIN</td>
+          <td class="projects-table__cell">NoParity</td>
+          <td class="projects-table__cell">
+            <a href="#" class="projects-table__link">Voir</a>
+          </td>
+        </tr>
+
+        <tr class="projects-table__row">
+          <th scope="row" class="projects-table__cell projects-table__cell--header">8</th>
+          <td class="projects-table__cell">Mathis DESARCHES</td>
+          <td class="projects-table__cell"></td>
+          <td class="projects-table__cell">
+            <a href="#" class="projects-table__link">Voir</a>
+          </td>
         </tr>
       </tbody>
     </table>
-  </div>
-</section>
+  </section>
+</main>
 
 
-<footer class="text-white mt-5" style="background-color:#1a1a1a;">
-  <div class="container py-5">
+<footer class="footer">
+  <div class="footer__container">
 
-    <div class="d-flex justify-content-center gap-5 align-items-start flex-wrap">
+    <nav class="footer__nav" aria-label="Navigation du pied de page">
 
-      <div class="mb-4">
-        <h5 class="mb-3 text-center">Navigation</h5>
-        <div class="row">
-          <div class="col-12">
-            <ul class="list-unstyled">
-              <li><a href="../index.html" class="text-white text-decoration-none">Accueil</a></li>
-              <li><a href="../Article_Principaux/chercheuse.html" class="text-white text-decoration-none">Rosalind Franklin</a></li>
-              <li><a href="../Article_Principaux/femmesScienceLitterature.html" class="text-white text-decoration-none">Femmes oubliées</a></li>
-              <li><a href="../Article_Principaux/film.html" class="text-white text-decoration-none">CinéMatilda</a></li>
-            </ul>
-          </div>
-          <div class="col-12">
-            <ul class="list-unstyled">
-              <li><a href="../Article_Principaux/objet.html" class="text-white text-decoration-none">Livre</a></li>
-              <li><a href="../Article_Secondaire/contact.html" class="text-white text-decoration-none">Contact</a></li>
-              <li><a href="../Article_Secondaire/projets.html" class="text-white text-decoration-none">Autres Projets</a></li>
-            </ul>
-          </div>
+      <div class="footer__section">
+        <h2 class="footer__heading">Navigation</h2>
+        <div class="footer__columns">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="/index.html" class="footer__link">Accueil</a></li>
+            <li class="footer__item"><a href="/fr/Article_Principaux/chercheuse.html" class="footer__link">Rosalind Franklin</a></li>
+            <li class="footer__item"><a href="/fr/Article_Principaux/femmesScienceLitterature.html" class="footer__link">Femmes oubliées</a></li>
+            <li class="footer__item"><a href="/fr/Article_Principaux/film.html" class="footer__link">CinéMatilda</a></li>
+            <li class="footer__item"><a href="/fr/Article_Principaux/objet.html" class="footer__link">Livre</a></li>
+            <li class="footer__item"><a href="/fr/Article_Secondaire/contact.html" class="footer__link">Contact</a></li>
+            <li class="footer__item"><a href="/fr/Article_Secondaire/projets.html" class="footer__link">Autres Projets</a></li>
+          </ul>
         </div>
       </div>
 
-      <div class="mb-4 d-flex flex-column justify-content-center align-items-center text-center">
-        <h5 class="mb-2 fw-bold" style="letter-spacing: 1px; color: #ff00ff;">
-          MatildaPresse
-        </h5>
-        <img src="../Media/adn.png" alt="Logo" class="img-fluid" style="max-width: 80px;">
-        <p class="small mt-2 text-white-50">
-          Plus qu’une presse, une plongée dans l’histoire
+      <div class="footer__branding">
+        <img src="/assets/img/icons/logo--white.svg" alt="Logo MatildaPresse" class="footer__logo" loading="lazy">
+        <p class="footer__tagline">
+          Plus qu'une presse, une plongée dans l'histoire
         </p>
       </div>
     
-
-      <div class="mb-4">
-        <p class="small mb-0">
-          <a href="../Article_Secondaire/mentions.html" class="text-white text-decoration-none">Mentions légales</a> | 
-          <a href="../Article_Secondaire/rgpd.html" class="text-white text-decoration-none">Politique RGPD</a>
-        </p>
+      <div class="footer__legal">
+        <span><strong>Mentions légales</strong></span>
+        <p>Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
       </div>
 
-    </div>
-
-    <div class="text-center pt-4 border-top border-secondary mt-3">
-      <p class="mb-0" >&copy; 2025 Effet Matilda | <a href="https://www.umlp.fr/">Université Marie & Louis Pasteur</a></p>
+    </nav>
+    <div class="separator-line"></div>
+    <div class="footer__copyright">
+      <ul>
+        <li>2025 Effet Matilda</li>
+        <li>@mael.brungard@univ-fcomte.fr</li>
+        <li><a href="https://www.umlp.fr/" class="footer__copyright-link">Université Marie & Louis Pasteur</a></li>
+      </ul>
     </div>
 
   </div>
 </footer>
-
-
-<script src="../JS/neon-effect.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script
-  src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.1/dist/dotlottie-wc.js"
-  type="module"
-></script>
 </body>
 </html>

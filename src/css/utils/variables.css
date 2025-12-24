@@ -9,6 +9,7 @@
     --light-grey: #6c757d;
     --header-gradient: linear-gradient(to bottom, black 0%, var(--dark-grey) 40%, var(--dark-grey) 100%);
     --fond: linear-gradient(to top, #FF00FF, #00FFFF);
+    --color-gradient: linear-gradient(to right, #FF00FF, #00FFFF);
 
     --spacing-header: 3.125rem;
     --padding-header: 0.9375rem;

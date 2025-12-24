@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ce site vous plonge dans l'effet Matilda et les femmes de science oubliées.">
+<title>Effet Matilda</title>
+<script type="module" src="/src/js/neon-effect.js"></script>
+<script type="module" src="/src/js/menu.js"></script>
+<link rel="stylesheet" href="/src/css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="menu menu--fixed menu--dark">
+  <div class="menu__container">
+    <header class="menu__header">
+      <a class="menu__brand" href="/index.html"><img src="/assets/img/icons/logo--white.svg" alt="logo light"></a>
+      <button class="menu__toggler" type="button" aria-controls="menuNav" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
+        <span class="menu__toggler-icon"></span>
+      </button>
+    </header>
+
+    <nav class="menu__collapse" id="menuNav" aria-hidden="true">
+      <ul class="menu__nav">
+
+        <li class="menu__item navbar__item--dropdown">
+          <button class="menu__link navbar__link--dropdown" aria-expanded="false" aria-controls="menu__dropdown" aria-label="Sélectionner la langue">
+            Langue
+          </button>
+          <ul class="menu__dropdown" aria-hidden="true">
+            <li><a class="menu__dropdown-item" href="/index.html">Français</a></li>
+            <li><a class="menu__dropdown-item" href="/index-en.html">English</a></li>
+          </ul>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/index.html">Accueil</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Principaux/chercheuse.html">Rosalind Franklin</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Principaux/femmesScienceLitterature.html">Femmes oubliées</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Principaux/theorie.html">Théorie</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Principaux/film.html">CinéMatilda</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Principaux/objet.html">Livre</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Secondaire/projets.html">Autres projets</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/fr/Article_Secondaire/contact.html">Contact</a>
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<main>
+  <section class="hero section">
+    <canvas class="hero__canvas" id="neonCanvas"></canvas>
+    <div class="hero__content">
+      <h1 class="hero__title title--home" id="heroTitle">Glossaire</h1>
+      <p class="hero__description">
+        Définitions et explications
+      </p>
+    </div>
+    <div class="hero__scroll-indicator">
+      <div class="hero__arrow"></div>
+      <div class="hero__arrow"></div>
+      <div class="hero__arrow"></div>
+    </div>
+  </section>
+  <section class="section--projects section">
+    <h2 class="projects-section__heading">Projets de la classe MMI1 - 2025</h2>
+    <table class="projects-table">
+    <thead class="projects-table__head">
+        <tr class="projects-table__row">
+        <th scope="col" class="projects-table__header">#</th>
+        <th scope="col" class="projects-table__header">Auteur(s)</th>
+        <th scope="col" class="projects-table__header">Nom de projet</th>
+        </tr>
+    </thead>
+    <tbody class="projects-table__body">
+        <tr class="projects-table__row">
+        <th scope="row" class="projects-table__cell projects-table__cell--header">1</th>
+        <td class="projects-table__cell">Rayons X</td>
+        <td class="projects-table__cell">rayonnement électromagnétique de haute énergie et courte longueur d’onde, invisible à l’œil nu, qui peut traverser la matière.</td>
+        </tr>
+
+        <tr class="projects-table__row">
+        <th scope="row" class="projects-table__cell projects-table__cell--header">2</th>
+        <td class="projects-table__cell">Double Hélice</td>
+        <td class="projects-table__cell">La structure de l’adn formée de deux brins antiparallèles enroulés l'un autour de l'autre.</td>
+        </tr>
+
+        <tr class="projects-table__row">
+        <th scope="row" class="projects-table__cell projects-table__cell--header">3</th>
+        <td class="projects-table__cell">ADN</td>
+        <td class="projects-table__cell"> molécule géante présente dans presque toutes les cellules vivantes et qui contient l'information génétique.</td>
+        </tr>
+
+        <tr class="projects-table__row">
+        <th scope="row" class="projects-table__cell projects-table__cell--header">4</th>
+        <td class="projects-table__cell">cristallographe</td>
+        <td class="projects-table__cell">qui étudie la structure, la formation et les propriétés des cristaux.</td>
+        </tr>
+    </tbody>
+    </table>
+  </section>
+</main>
+
+
+<footer class="footer">
+  <div class="footer__container">
+
+    <nav class="footer__nav" aria-label="Navigation du pied de page">
+
+      <div class="footer__section">
+        <h2 class="footer__heading">Navigation</h2>
+        <div class="footer__columns">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="/index.html" class="footer__link">Accueil</a></li>
+            <li class="footer__item"><a href="/fr/Article_Principaux/chercheuse.html" class="footer__link">Rosalind Franklin</a></li>
+            <li class="footer__item"><a href="/fr/Article_Principaux/femmesScienceLitterature.html" class="footer__link">Femmes oubliées</a></li>
+            <li class="footer__item"><a href="/fr/Article_Principaux/film.html" class="footer__link">CinéMatilda</a></li>
+            <li class="footer__item"><a href="/fr/Article_Principaux/objet.html" class="footer__link">Livre</a></li>
+            <li class="footer__item"><a href="/fr/Article_Secondaire/contact.html" class="footer__link">Contact</a></li>
+            <li class="footer__item"><a href="/fr/Article_Secondaire/projets.html" class="footer__link">Autres Projets</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__branding">
+        <img src="/assets/img/icons/logo--white.svg" alt="Logo MatildaPresse" class="footer__logo" loading="lazy">
+        <p class="footer__tagline">
+          Plus qu'une presse, une plongée dans l'histoire
+        </p>
+      </div>
+    
+      <div class="footer__legal">
+        <span><strong>Mentions légales</strong></span>
+        <p>Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
+      </div>
+
+    </nav>
+    <div class="separator-line"></div>
+    <div class="footer__copyright">
+      <ul>
+        <li>2025 Effet Matilda</li>
+        <li>@mael.brungard@univ-fcomte.fr</li>
+        <li><a href="https://www.umlp.fr/" class="footer__copyright-link">Université Marie & Louis Pasteur</a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+</body>
+</html>

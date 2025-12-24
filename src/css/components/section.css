@@ -20,11 +20,7 @@
     gap: var(--padding);
 }
 
-.section--film{
-    padding: var(--padding);
-}
-
-.section--film__container{
+.section--film__button, .section--livre__button{
     padding: var(--padding);
     display: flex;
     flex-direction: row;
@@ -34,4 +30,13 @@
     align-items: center;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
+}
+
+.section--film__image-wrapper, .section--livre__image-wrapper{
+    padding: var(--padding);
+}
+.extrait__article{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
