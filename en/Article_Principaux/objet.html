@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ce site vous plonge dans l'effet Matilda et les femmes de science oubliées.">
+<title>Effet Matilda</title>
+<script type="module" src="/src/js/neon-effect.js"></script>
+<script type="module" src="/src/js/menu.js"></script>
+<link rel="stylesheet" href="/src/css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="menu menu--fixed menu--dark">
+  <div class="menu__container">
+    <header class="menu__header">
+      <a class="menu__brand" href="/index-en.html"><img src="/assets/img/icons/logo--white.svg" alt="logo light"></a>
+      <button class="menu__toggler" type="button" aria-controls="menuNav" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
+        <span class="menu__toggler-icon"></span>
+      </button>
+    </header>
+
+    <nav class="menu__collapse" id="menuNav" aria-hidden="true">
+      <ul class="menu__nav">
+
+        <li class="menu__item navbar__item--dropdown">
+          <button class="menu__link navbar__link--dropdown" aria-expanded="false" aria-controls="menu__dropdown" aria-label="Sélectionner la langue">
+            Language
+          </button>
+          <ul class="menu__dropdown" aria-hidden="true">
+            <li><a class="menu__dropdown-item" href="/index.html">Français</a></li>
+            <li><a class="menu__dropdown-item" href="/index-en.html">English</a></li>
+          </ul>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/index-en.html">Menu</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/en/Article_Principaux/chercheuse.html">Rosalind Franklin</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/en/Article_Principaux/femmesScienceLitterature.html">Forgetten Womens</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/en/Article_Principaux/theorie.html">Theory</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/en/Article_Principaux/film.html">CineMatilda</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/en/Article_Principaux/objet.html">Book</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/en/Article_Secondaire/projets.html">Others Projects</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/en/Article_Secondaire/contact.html">Contact</a>
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<main>
+  <section class="hero section">
+    <canvas class="hero__canvas" id="neonCanvas"></canvas>
+    <div class="hero__content">
+      <h1 class="hero__title title--home" id="heroTitle">The Gene</h1>
+      <p class="hero__description">
+        A book about<a class="glossaire-link" href="/en/Article_Secondaire/glossaire.html">DNA</a> with a special mention to Rosalind Franklin.
+      </p>
+    </div>
+    <div class="hero__scroll-indicator">
+      <div class="hero__arrow"></div>
+      <div class="hero__arrow"></div>
+      <div class="hero__arrow"></div>
+    </div>
+  </section>
+  
+  <section class="section--livre section" data-aos="fade-up">
+    <button class="section--livre__button" 
+                  data-trailer="double-helix.mp4"
+                  aria-label="Voir la bande-annonce de Les Figures de l'ombre">
+      <div class="section--livre__image-wrapper">
+        <img src="/assets/img/BOOKS/theraceforthedoublehelix.avif" 
+              class="section--livre__image" 
+              alt="Affiche du film The Race for the Double Helix" 
+              loading="lazy">
+      </div>
+      <div class="section--livre__text">
+        <h2 class="section--livre__title">The Gene - An intimate History</h2>
+        <p class="section--livre__description text-start">
+          Between historical narrative and biology lecture, the author sets out to reveal the secrets of life and heredity, to explain genetics and its applications. He draws on his family history as well as numerous cases to shed light on what genes are and what they reveal about humans.
+        </p>
+      </div>
+    </button>
+  </section>
+
+  <section class="section--extrait section">
+    <div class="extrait__container">
+      <h2 class="extrait__heading text-center" data-aos="fade-up">Extract from the Book:</h2>
+      <div class="extrait__content">
+        <article class="extrait__article" data-aos="fade-up">
+          <p>
+            <strong>Aristotle and the Theory of Generation</strong>
+          </p>
+          <p>
+            Aristotle proposed an alternative theory that was truly revolutionary for his time.  
+            Perhaps females, like males, contribute to the material formation of the fetus through a kind of female semen.  
+            And perhaps the fetus develops with the mutual contribution of male and female parts.    
+          </p>
+          <p>
+            Seeking analogies, Aristotle called the male contribution a “principle of movement.”  
+            The term “movement” here does not mean physical motion but rather instruction,  
+            or a kind of code in modern terms.  
+          </p>
+          <p>
+            The matter actually transmitted during mating would, in fact,  
+            be only a facade for a more obscure and mysterious exchange.  
+            In reality, the matter itself would not be that important:  
+            what passes from man to woman is not matter, but a message.  
+          </p>
+          <p>
+            Like the blueprint of a building guiding the workers,  
+            or the mind of a carpenter guiding his hand on a piece of wood,  
+            male semen would provide the instructions to construct a child.
+          </p>
+          <p class="text-small">
+            "Nothing leaves the carpenter for the material that constitutes the pieces of wood [...]  
+            but it is the configuration and the form that come from him through the movement that is in the matter [...]," wrote Aristotle.  
+            "In the same way [...] nature, which is in the male, uses semen as a tool."
+          </p>
+          <p>
+            Female semen, on the other hand, would provide the raw material to form the fetus, like wood for the carpenter or mortar for the builder.  
+            It would be both the matter and the essence of life.  
+            Aristotle argued that the true material provided by the female is menstrual blood. 
+          </p>
+          <p>
+            This blood would be shaped by the male semen to give the form of the child.
+          </p>
+          <p>
+            This may seem curious today, but here too Aristotle showed meticulous logic:  
+            since the disappearance of menstruation coincides with conception,  
+            he assumed that the fetus forms from it. 
+          </p>
+          <p>
+            If Aristotle was mistaken about the distribution of male and female contributions  
+            into “matter” and “message,”  
+            he nonetheless grasped one of the essential truths about the nature of heredity.  
+            He conceived it, in modern terms, as the transmission of information.
+          </p>
+          <p>
+            This information is then used to build an organism from scratch,  
+            and the message becomes matter.  
+            When an organism reaches maturity, it produces semen in turn,  
+            transforming matter back into a message. 
+          </p>
+          <p>
+            Thus, it was no longer the Pythagorean triangle, but a circle,  
+            a cycle where form gives information, and information gives form. 
+          </p>
+          <p>
+            Centuries later, the biologist Max Delbrück would jokingly say  
+            that Aristotle should be awarded the Nobel Prize posthumously for the discovery of <a class="glossaire-link" href="/en/Article_Secondaire/glossaire.html">DNA</a>.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__container">
+
+    <nav class="footer__nav" aria-label="Navigation du pied de page">
+
+      <div class="footer__section">
+        <h2 class="footer__heading">Navigation</h2>
+        <div class="footer__columns">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="/index-en.html" class="footer__link">Menu</a></li>
+            <li class="footer__item"><a href="/en/Article_Principaux/chercheuse.html" class="footer__link">Rosalind Franklin</a></li>
+            <li class="footer__item"><a href="/en/Article_Principaux/femmesScienceLitterature.html" class="footer__link">Forgetten Womens</a></li>
+            <li class="footer__item"><a href="/en/Article_Principaux/film.html" class="footer__link">CineMatilda</a></li>
+            <li class="footer__item"><a href="/en/Article_Principaux/objet.html" class="footer__link">Book</a></li>
+            <li class="footer__item"><a href="/en/Article_Secondaire/contact.html" class="footer__link">Contact</a></li>
+            <li class="footer__item"><a href="/en/Article_Secondaire/projets.html" class="footer__link">Other projects</a></li>
+            <li class="footer__item"><a href="/en/Article_Secondaire/glossaire.html" class="footer__link">Glossary</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__branding">
+        <img src="/assets/img/icons/logo--white.svg" alt="Logo MatildaPresse" class="footer__logo" loading="lazy">
+        <p class="footer__tagline">
+          More than a press, a dive into history.
+        </p>
+      </div>
+    
+      <div class="footer__legal">
+        <span><strong>Legal Mentions</strong></span>
+        <p> Project carried out in 2025 as part of an educational exercise at the <a class="glossaire-link" href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/">MMI department in Montbéliard.</a></p>
+      </div>
+
+    </nav>
+    <div class="separator-line"></div>
+    <div class="footer__copyright">
+      <ul>
+        <li>2025 Effet Matilda</li>
+        <li>@mael.brungard@univ-fcomte.fr</li>
+        <li><a href="https://www.umlp.fr/" class="footer__copyright-link">Université Marie & Louis Pasteur</a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+</body>
+</html>

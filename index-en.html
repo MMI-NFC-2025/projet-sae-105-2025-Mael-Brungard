@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ce site vous plonge dans l'effet Matilda et les femmes de science oubliées.">
+<title>Effet Matilda</title>
+<script type="module" src="/src/js/neon-effect.js"></script>
+<script type="module" src="/src/js/menu.js"></script>
+<link rel="stylesheet" href="/src/css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="menu menu--fixed menu--dark">
+  <div class="menu__container">
+    <header class="menu__header">
+      <a class="menu__brand" href="/index-en.html"><img src="/assets/img/icons/logo--white.svg" alt="logo light"></a>
+      <button class="menu__toggler" type="button" aria-controls="menuNav" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
+        <span class="menu__toggler-icon"></span>
+      </button>
+    </header>
+
+    <nav class="menu__collapse" id="menuNav" aria-hidden="true">
+      <ul class="menu__nav">
+
+        <li class="menu__item navbar__item--dropdown">
+          <button class="menu__link navbar__link--dropdown" aria-expanded="false" aria-controls="menu__dropdown" aria-label="Sélectionner la langue">
+            Language
+          </button>
+          <ul class="menu__dropdown" aria-hidden="true">
+            <li><a class="menu__dropdown-item" href="/index.html">Français</a></li>
+            <li><a class="menu__dropdown-item" href="/index-en.html">English</a></li>
+          </ul>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/index-en.html">Menu</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/en/Article_Principaux/chercheuse.html">Rosalind Franklin</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/en/Article_Principaux/femmesScienceLitterature.html">Forgetten Womens</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/en/Article_Principaux/theorie.html">Theory</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/en/Article_Principaux/film.html">CineMatilda</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/en/Article_Principaux/objet.html">Book</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/en/Article_Secondaire/projets.html">Others Projects</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/en/Article_Secondaire/contact.html">Contact</a>
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<main>
+  <section class="hero section">
+    <canvas class="hero__canvas" id="neonCanvas"></canvas>
+    <div class="hero__content">
+      <h1 class="hero__title title--home" id="heroTitle">Discover the Matilda Effect</h1>
+      <p class="hero__description">
+        Understand how our brain filter some informations and ignore some  forgotten female figures.
+      </p>
+    </div>
+    <div class="hero__scroll-indicator">
+      <div class="hero__arrow"></div>
+      <div class="hero__arrow"></div>
+      <div class="hero__arrow"></div>
+    </div>
+  </section>
+  <section class="section--cards section">
+    <div class="section__container">
+
+      <article class="card">
+        <a href="/en/Article_Principaux/chercheuse.html" class="card__link">
+          <img src="/assets/img/Rosalind_2.webp" class="card__image" alt="Portrait de Rosalind Franklin" loading="lazy">
+          <div class="card__body">
+            <h2 class="card__title">Rosalind Franklin</h2>
+            <p class="card__text">A scientist who helped discover the double helix structure of DNA.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="/en/Article_Principaux/theorie.html" class="card__link">
+          <img src="/assets/img/ADN.webp" class="card__image" alt="Représentation de la double hélice d'ADN" loading="lazy">
+          <div class="card__body">
+            <h2 class="card__title">The Double Helix DNA</h2>
+            <p class="card__text">What is the double helix structure? How did it change science, and how important is this structure?</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="/en/Article_Principaux/femmesScienceLitterature.html" class="card__link">
+          <img src="/assets/img/femmesScienceLitterature.webp" class="card__image" alt="Illustration de femmes scientifiques" loading="lazy">
+          <div class="card__body">
+            <h2 class="card__title">Forgetten Women in Science</h2>
+            <p class="card__text">A library of works where some female researchers are mentioned, A trip through time in search of all the Matildas.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="/en/Article_Principaux/film.html" class="card__link">
+          <img src="/assets/img/Film.webp" class="card__image" alt="Illustration cinématographique" loading="lazy">
+          <div class="card__body">
+            <h2 class="card__title">CineMatilda</h2>
+            <p class="card__text">A gallery of films and series dedicated to forgotten women in science.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="/en/Article_Principaux/objet.html" class="card__link">
+          <img src="/assets/img/Livre.webp" class="card__image" alt="Couverture de livre sur les femmes scientifiques" loading="lazy">
+          <div class="card__body">
+            <h2 class="card__title">The Gene - An intimate History</h2>
+            <p class="card__text">A book that tells the story of DNA, with a mention of Rosalind Franklin, even though she remained in the shadows.</p>
+          </div>
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="intro section" id="intro">
+    <div class="intro__container">
+      <div class="intro__content">
+        <div class="intro__image-wrapper">
+          <img src="/assets/img/effet-matilda.webp" 
+               class="intro__image" 
+               alt="Illustration de l'effet Matilda"
+               loading="lazy">
+        </div>
+        <article class="intro__text">
+          <h2 class="intro__subtitle">The Matilda Effect</h2>
+          <p class="intro__paragraph">
+            The <strong>Matilda Effect</strong> refers to the tendency to ignore or attribute to men the discoveries made by women. This injustice has long erased essential female researchers from scientific memory.
+          </p>
+          <p class="intro__paragraph">
+            A striking example is <a href="/en/Article_Principaux/chercheuse.html" class="intro__link"><strong>Rosalind Franklin</strong></a>, whose <a class="glossaire-link" href="/en/Article_Secondaire/glossaire.html">X-ray</a> diffraction images revealed the <a class="glossaire-link" href="/en/Article_Secondaire/glossaire.html">double helix</a>, but whose role was long unrecognized.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="about section" id="a-propos">
+    <div class="about__container">
+      <h2 class="about__heading text-center">About</h2>
+      <p class="about__text text-center">
+        This site was created by <strong>Mael Brungard</strong> <span class="about__author-handle">@BooMooN-Creation</span>, First-year MMI student as part of an individual end-of-semester project.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__container">
+
+    <nav class="footer__nav" aria-label="Navigation du pied de page">
+
+      <div class="footer__section">
+        <h2 class="footer__heading">Navigation</h2>
+        <div class="footer__columns">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="/index-en.html" class="footer__link">Menu</a></li>
+            <li class="footer__item"><a href="/en/Article_Principaux/chercheuse.html" class="footer__link">Rosalind Franklin</a></li>
+            <li class="footer__item"><a href="/en/Article_Principaux/femmesScienceLitterature.html" class="footer__link">Forgetten Womens</a></li>
+            <li class="footer__item"><a href="/en/Article_Principaux/film.html" class="footer__link">CineMatilda</a></li>
+            <li class="footer__item"><a href="/en/Article_Principaux/objet.html" class="footer__link">Book</a></li>
+            <li class="footer__item"><a href="/en/Article_Secondaire/contact.html" class="footer__link">Contact</a></li>
+            <li class="footer__item"><a href="/en/Article_Secondaire/projets.html" class="footer__link">Other projects</a></li>
+            <li class="footer__item"><a href="/en/Article_Secondaire/glossaire.html" class="footer__link">Glossary</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__branding">
+        <img src="/assets/img/icons/logo--white.svg" alt="Logo MatildaPresse" class="footer__logo" loading="lazy">
+        <p class="footer__tagline">
+          More than a press, a dive into history.
+        </p>
+      </div>
+    
+      <div class="footer__legal">
+        <span><strong>Legal Mentions</strong></span>
+        <p> Project carried out in 2025 as part of an educational exercise at the <a class="glossaire-link" href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/">MMI department in Montbéliard.</a></p>
+      </div>
+
+    </nav>
+    <div class="separator-line"></div>
+    <div class="footer__copyright">
+      <ul>
+        <li>2025 Effet Matilda</li>
+        <li>@mael.brungard@univ-fcomte.fr</li>
+        <li><a href="https://www.umlp.fr/" class="footer__copyright-link">Université Marie & Louis Pasteur</a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+</body>
+</html>
