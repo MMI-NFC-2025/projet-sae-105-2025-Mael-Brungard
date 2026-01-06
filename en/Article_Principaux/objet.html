@@ -11,12 +11,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg" />
-  <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="MatildaPresse" />
-  <link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
+  <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg">
+  <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="MatildaPresse">
+  <link rel="manifest" href="/assets/img/favicon/site.webmanifest">
 </head>
 
 <body>
@@ -36,7 +36,7 @@
           <button class="menu__link navbar__link--dropdown" aria-expanded="false" aria-controls="menu__dropdown" aria-label="Sélectionner la langue">
             Language
           </button>
-          <ul class="menu__dropdown" aria-hidden="true">
+          <ul class="menu__dropdown" id="menu__dropdown" aria-hidden="true">
             <li><a class="menu__dropdown-item" href="/fr/Article_Principaux/objet.html">Français</a></li>
             <li><a class="menu__dropdown-item" href="/en/Article_Principaux/objet.html">English</a></li>
           </ul>
@@ -96,9 +96,7 @@
   </section>
   
   <section class="section--livre section">
-    <button class="section--livre__button" 
-                  data-trailer="double-helix.mp4"
-                  aria-label="Voir la bande-annonce de Les Figures de l'ombre">
+    <div class="section--livre__button">
       <div class="section--livre__image-wrapper">
         <img src="/assets/img/BOOKS/theraceforthedoublehelix.avif" 
               class="section--livre__image" 
@@ -111,14 +109,14 @@
           Between historical narrative and biology lecture, the author sets out to reveal the secrets of life and heredity, to explain genetics and its applications. He draws on his family history as well as numerous cases to shed light on what genes are and what they reveal about humans.
         </p>
       </div>
-    </button>
+    </div>
   </section>
 
   <section class="section--extrait section">
     <div class="extrait__container">
       <h2 class="extrait__heading text-center">Extract from the Book:</h2>
       <div class="extrait__content">
-        <article class="extrait__article">
+        <div class="extrait__article">
           <p>
             <strong>Aristotle and the Theory of Generation</strong>
           </p>
@@ -181,7 +179,7 @@
             Centuries later, the biologist Max Delbrück would jokingly say  
             that Aristotle should be awarded the Nobel Prize posthumously for the discovery of <a class="glossaire-link" href="/en/Article_Secondaire/glossaire.html">DNA</a>.
           </p>
-        </article>
+        </div>
       </div>
     </div>
   </section>

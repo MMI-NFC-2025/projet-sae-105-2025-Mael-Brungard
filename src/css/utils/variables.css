@@ -1,12 +1,11 @@
 /* Variable collection */
 :root {
-    /* Mode 1 */
-    /* color */
     --blue: #00ffff;
     --purple: #ff00ff;
     --dark-grey: #1a1a1a;
     --light: #f8f9fa;
     --light-grey: #6c757d;
+    --grey: #212529;
     --header-gradient: linear-gradient(to bottom, black 0%, var(--dark-grey) 40%, var(--dark-grey) 100%);
     --fond: linear-gradient(to top, #FF00FF, #00FFFF);
     --color-gradient: linear-gradient(to right, #FF00FF, #00FFFF);
@@ -14,6 +13,7 @@
     --spacing-header: 3.125rem;
     --padding-header: 0.9375rem;
     --padding: 1.25rem;
+    --padding-form: 1.875rem;
 }
 
 @keyframes scan {

@@ -13,12 +13,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg" />
-  <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="MatildaPresse" />
-  <link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
+  <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg">
+  <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="MatildaPresse">
+  <link rel="manifest" href="/assets/img/favicon/site.webmanifest">
 </head>
 
 <body>
@@ -38,7 +38,7 @@
           <button class="menu__link navbar__link--dropdown" aria-expanded="false" aria-controls="menu__dropdown" aria-label="Sélectionner la langue">
             Langue
           </button>
-          <ul class="menu__dropdown" aria-hidden="true">
+          <ul class="menu__dropdown" id="menu__dropdown" aria-hidden="true">
             <li><a class="menu__dropdown-item" href="/fr/Article_Principaux/film.html">Français</a></li>
             <li><a class="menu__dropdown-item" href="/en/Article_Principaux/film.html">English</a></li>
           </ul>
@@ -98,9 +98,8 @@
   </section>
   
   <section class="section--film section">
-    <button class="section--film__button" 
-                  data-trailer="double-helix.mp4"
-                  aria-label="Voir la bande-annonce de Les Figures de l'ombre">
+    <div class="section--film__button" 
+                  data-trailer="double-helix.mp4">
       <div class="section--film__image-wrapper">
         <img src="/assets/img/FILMS/TRFTDH.webp" 
               class="section--film__image" 
@@ -110,22 +109,20 @@
       <div class="section--film__text">
         <h2 class="section--film__title">The Race for the Double Helix (1987)</h2>
         <p class="section--film__description text-start">
-          Ce film retrace la découverte de la structure de l'<a class="glossaire-link" href="/fr/Article_Secondaire/glossaire.html">ADN</a> et met en lumière le rôle central de Rosalind Franklin. 
+          Ce film retrace la découverte de la structure de l'ADN et met en lumière le rôle central de Rosalind Franklin. 
           Une plongée fascinante dans le contexte scientifique et les rivalités qui ont marqué cette époque.
         </p>
       </div>
-    </button>
+    </div>
   </section>
 
   <section class="section--gallery section">
     <div class="gallery__container">
       <h2 class="gallery__heading text-center">Galerie</h2>
       <div class="gallery__grid">
-
         <article class="gallery-card">
-          <button class="gallery-card__button" 
-                  data-trailer="figures-ombres.mp4"
-                  aria-label="Voir la bande-annonce de Les Figures de l'ombre">
+          <div class="gallery-card__button" 
+                  data-trailer="figures-ombres.mp4">
             <div class="gallery-card__image-wrapper">
               <img src="/assets/img/FILMS/LesFiguresDeLombre.webp" 
                    class="gallery-card__image" 
@@ -136,13 +133,12 @@
               <h3 class="gallery-card__title">Les Figures de l'ombre</h3>
               <p class="gallery-card__year">2016</p>
             </div>
-          </button>
+          </div>
         </article>
 
         <article class="gallery-card">
-          <button class="gallery-card__button" 
-                  data-trailer="radioactive.mp4"
-                  aria-label="Voir la bande-annonce de Radioactive">
+          <div class="gallery-card__button" 
+                  data-trailer="radioactive.mp4">
             <div class="gallery-card__image-wrapper">
               <img src="/assets/img/FILMS/Radioactive.webp" 
                    class="gallery-card__image" 
@@ -153,13 +149,12 @@
               <h3 class="gallery-card__title">Radioactive</h3>
               <p class="gallery-card__year">2019</p>
             </div>
-          </button>
+          </div>
         </article>
 
         <article class="gallery-card">
-          <button class="gallery-card__button" 
-                  data-trailer="marie-curie-tcok.mp4"
-                  aria-label="Voir la bande-annonce de Marie Curie: The Courage of Knowledge">
+          <div class="gallery-card__button" 
+                  data-trailer="marie-curie-tcok.mp4">
             <div class="gallery-card__image-wrapper">
               <img src="/assets/img/FILMS/MarieCurieTCOK.webp" 
                    class="gallery-card__image" 
@@ -170,13 +165,12 @@
               <h3 class="gallery-card__title">Marie Curie: The Courage of Knowledge</h3>
               <p class="gallery-card__year">2016</p>
             </div>
-          </button>
+          </div>
         </article>
 
         <article class="gallery-card">
-          <button class="gallery-card__button" 
-                  data-trailer="madame-curie.mp4"
-                  aria-label="Voir la bande-annonce de Madame Curie">
+          <div class="gallery-card__button" 
+                  data-trailer="madame-curie.mp4">
             <div class="gallery-card__image-wrapper">
               <img src="/assets/img/FILMS/MadameCurie.webp" 
                    class="gallery-card__image" 
@@ -187,9 +181,8 @@
               <h3 class="gallery-card__title">Madame Curie</h3>
               <p class="gallery-card__year">1943</p>
             </div>
-          </button>
+          </div>
         </article>
-
       </div>
     </div>
   </section>
@@ -206,7 +199,7 @@
     </div>
     <div class="modal__body">
       <div class="modal__video-wrapper">
-        <video id="trailerVid" controls src="/assets/video/madame-curie.mp4" type="video/mp4"></video>
+        <video id="trailerVid" controls src="/assets/video/madame-curie.mp4"></video>
       </div>
     </div>
   </div>

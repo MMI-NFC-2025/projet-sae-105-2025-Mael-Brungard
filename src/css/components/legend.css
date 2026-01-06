@@ -1,0 +1,12 @@
+.image-legende {
+    font-size: 0.8rem;
+    color: var(--light);
+
+    a {
+        text-decoration: underline;
+    }
+
+    em {
+        color: var(--light-grey);
+    }
+}

@@ -1,22 +1,26 @@
-.projects-table__head{
+.projects-table__head {
     padding: var(--padding);
     background: var(--color-gradient);
     border: none;
     border-spacing: 0;
 }
-.projects-table__body{
+
+.projects-table__body {
     padding: var(--padding);
-    background-color: #212529;
+    background-color: var(--grey);
     gap: 20px;
 }
-.projects-table{
+
+.projects-table {
     border: none;
     border-spacing: 0;
 }
-.projects-table__cell{
+
+.projects-table__cell {
     padding: 15px;
 }
-.projects-table__link{
+
+.projects-table__link {
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 1rem;

@@ -11,12 +11,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg" />
-  <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="MatildaPresse" />
-  <link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
+  <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg">
+  <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="MatildaPresse">
+  <link rel="manifest" href="/assets/img/favicon/site.webmanifest">
 </head>
 <body>
 
@@ -36,7 +36,7 @@
           <button class="menu__link navbar__link--dropdown" aria-expanded="false" aria-controls="menu__dropdown" aria-label="Sélectionner la langue">
             Language
           </button>
-          <ul class="menu__dropdown" aria-hidden="true">
+          <ul class="menu__dropdown" id="menu__dropdown" aria-hidden="true">
             <li><a class="menu__dropdown-item" href="/fr/Article_Secondaire/contact.html">Français</a></li>
             <li><a class="menu__dropdown-item" href="/en/Article_Secondaire/contact.html">English</a></li>
           </ul>
@@ -91,17 +91,15 @@
       <div class="hero__arrow"></div>
     </div>
   </section>
-  <div class="contact-form">
-    <form class="contact-form__wrapper" action="#" method="post">
-      <h1 class="contact-form__title">Contactez-nous</h1>
-      
+  <div class="section--contact section">
+    <form class="contact-form" action="#" method="post">      
       <div class="contact-form__field">
-        <label for="name" class="contact-form__label">Nom</label>
+        <label for="name" class="contact-form__label">Name</label>
         <input type="text" 
                 class="contact-form__input" 
                 id="name" 
                 name="name"
-                placeholder="Votre nom" 
+                placeholder="Your name" 
                 required>
       </div>
 
@@ -111,17 +109,17 @@
                 class="contact-form__input" 
                 id="email" 
                 name="email"
-                placeholder="Votre email" 
+                placeholder="Your email" 
                 required>
       </div>
 
       <div class="contact-form__field">
-        <label for="subject" class="contact-form__label">Objet</label>
+        <label for="subject" class="contact-form__label">Topic</label>
         <input type="text" 
                 class="contact-form__input" 
                 id="subject" 
                 name="subject"
-                placeholder="Objet du message" 
+                placeholder="Your topic..." 
                 required>
       </div>
 
@@ -131,12 +129,12 @@
                   id="message" 
                   name="message"
                   rows="5" 
-                  placeholder="Votre message..." 
+                  placeholder="Your message..." 
                   required></textarea>
       </div>
 
       <div class="contact-form__actions">
-        <button type="submit" class="contact-form__submit">Envoyer</button>
+        <button type="submit" class="contact-form__submit">Send</button>
       </div>
     </form>
   </div>

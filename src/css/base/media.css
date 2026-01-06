@@ -1,1 +1,6 @@
-/* Fichier vide - Pas de modifications nécessaires */
+.biography__image,
+.contributions__image,
+.section--theory__image,
+.section--discovery__image {
+    border-radius: 0.5rem;
+}

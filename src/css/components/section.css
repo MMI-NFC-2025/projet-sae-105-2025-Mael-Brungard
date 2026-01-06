@@ -14,13 +14,16 @@
     gap: var(--padding);
 }
 
-.applications__grid, .library__grid , .gallery__grid {
+.applications__grid,
+.library__grid,
+.gallery__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: var(--padding);
 }
 
-.section--film__button, .section--livre__button{
+.section--film__button,
+.section--livre__button {
     padding: var(--padding);
     display: flex;
     flex-direction: row;
@@ -32,10 +35,12 @@
     backdrop-filter: blur(10px);
 }
 
-.section--film__image-wrapper, .section--livre__image-wrapper{
+.section--film__image-wrapper,
+.section--livre__image-wrapper {
     padding: var(--padding);
 }
-.extrait__article{
+
+.extrait__article {
     display: flex;
     flex-direction: column;
     gap: 20px;

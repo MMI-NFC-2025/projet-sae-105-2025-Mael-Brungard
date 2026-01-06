@@ -12,12 +12,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg" />
-  <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="MatildaPresse" />
-  <link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
+  <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg">
+  <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="MatildaPresse">
+  <link rel="manifest" href="/assets/img/favicon/site.webmanifest">
 </head>
 <body>
 
@@ -37,7 +37,7 @@
           <button class="menu__link navbar__link--dropdown" aria-expanded="false" aria-controls="menu__dropdown" aria-label="Sélectionner la langue">
             Langue
           </button>
-          <ul class="menu__dropdown" aria-hidden="true">
+          <ul class="menu__dropdown" id="menu__dropdown" aria-hidden="true">
             <li><a class="menu__dropdown-item" href="/fr/Article_Principaux/femmesScienceLitterature.html">Français</a></li>
             <li><a class="menu__dropdown-item" href="/en/Article_Principaux/femmesScienceLitterature.html">English</a></li>
           </ul>
@@ -104,7 +104,7 @@
 
       <div class="timeline" role="list">
 
-        <article class="timeline__item" role="listitem">
+        <article class="timeline__item">
           <button class="timeline__dot timeline__dot--cyan" 
                   type="button"
                   aria-label="Ada Lovelace, 1815 - Première programmeuse informatique, visionnaire du calcul">
@@ -114,7 +114,7 @@
           <h3 class="timeline__name">Ada Lovelace</h3>
         </article>
 
-        <article class="timeline__item" role="listitem">
+        <article class="timeline__item">
           <button class="timeline__dot timeline__dot--magenta" 
                   type="button"
                   aria-label="Marie Curie, 1867 - Physicienne et chimiste, pionnière de la radioactivité">
@@ -124,7 +124,7 @@
           <h3 class="timeline__name">Marie Curie</h3>
         </article>
 
-        <article class="timeline__item" role="listitem">
+        <article class="timeline__item">
           <button class="timeline__dot timeline__dot--cyan" 
                   type="button"
                   aria-label="Lise Meitner, 1878 - Physicienne, co-découvreuse de la fission nucléaire">
@@ -134,17 +134,17 @@
           <h3 class="timeline__name">Lise Meitner</h3>
         </article>
 
-        <article class="timeline__item" role="listitem">
+        <article class="timeline__item">
           <button class="timeline__dot timeline__dot--magenta" 
                   type="button"
                   aria-label="Rosalind Franklin, 1920 - ADN, pionnière en cristallographie aux rayons X">
-            <span class="timeline__tooltip">Rosalind Franklin (1920–1958) : <a class="glossaire-link" href="/fr/Article_Secondaire/glossaire.html">ADN</a>, pionnière en cristallographie aux <a class="glossaire-link" href="/fr/Article_Secondaire/glossaire.html">rayons X</a>.</span>
+            <span class="timeline__tooltip">Rosalind Franklin (1920–1958) : ADN, pionnière en cristallographie aux rayons X.</span>
           </button>
           <p class="timeline__year">1920</p>
           <h3 class="timeline__name">Rosalind Franklin</h3>
         </article>
 
-        <article class="timeline__item" role="listitem">
+        <article class="timeline__item">
           <button class="timeline__dot timeline__dot--cyan" 
                   type="button"
                   aria-label="Katherine Johnson, 1918 - Mathématicienne à la NASA, a calculé des trajectoires spatiales">
@@ -154,7 +154,7 @@
           <h3 class="timeline__name">Katherine Johnson</h3>
         </article>
 
-        <article class="timeline__item" role="listitem">
+        <article class="timeline__item">
           <button class="timeline__dot timeline__dot--magenta" 
                   type="button"
                   aria-label="Dorothy Hodgkin, 1910 - Chimiste, prix Nobel de chimie pour la cristallographie">
@@ -164,7 +164,7 @@
           <h3 class="timeline__name">Dorothy Hodgkin</h3>
         </article>
 
-        <article class="timeline__item" role="listitem">
+        <article class="timeline__item">
           <button class="timeline__dot timeline__dot--cyan" 
                   type="button"
                   aria-label="Grace Hopper, 1906 - Informaticienne, inventrice du compilateur pour langages informatiques">
@@ -174,7 +174,7 @@
           <h3 class="timeline__name">Grace Hopper</h3>
         </article>
 
-        <article class="timeline__item" role="listitem">
+        <article class="timeline__item">
           <button class="timeline__dot timeline__dot--magenta" 
                   type="button"
                   aria-label="Barbara McClintock, 1902 - Généticienne, découverte des éléments génétiques mobiles">
@@ -184,7 +184,7 @@
           <h3 class="timeline__name">Barbara McClintock</h3>
         </article>
 
-        <article class="timeline__item" role="listitem">
+        <article class="timeline__item">
           <button class="timeline__dot timeline__dot--cyan" 
                   type="button"
                   aria-label="Mary Anning, 1799 - Paléontologue britannique, découverte de fossiles marins importants">
@@ -194,7 +194,7 @@
           <h3 class="timeline__name">Mary Anning</h3>
         </article>
 
-        <article class="timeline__item" role="listitem">
+        <article class="timeline__item">
           <button class="timeline__dot timeline__dot--magenta" 
                   type="button"
                   aria-label="Emmy Noether, 1882 - Mathématicienne, pionnière en algèbre abstraite et physique théorique">
