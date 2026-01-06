@@ -14,7 +14,7 @@ document.querySelectorAll('.gallery-card__button , .section--film__button').forE
         const videoName = card.getAttribute('data-trailer');
         const titleElement = card.querySelector('.gallery-card__title , .section--film__title');
         const title = titleElement ? titleElement.textContent : 'Bande-annonce';
-        trailerVid.src = `https://matildapresse.boomoon.cloud/assets/video/${videoName}`;
+        trailerVid.src = `https://sae-cloud.boomoon.cloud/${videoName}`;
         trailerTitle.textContent = title + " - Bande-annonce";
         trailerModal.ariaHidden = 'false';
         document.body.classList.add('no-scroll');
